@@ -8,7 +8,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 80px;
+    height: 70px;
     width: 100%;
 }
 
@@ -29,7 +29,7 @@ nav ul li a {
     color: #56B4E9;
     font-weight: bold;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 15px;
 
 }
 
@@ -41,7 +41,6 @@ nav ul li a {
   background-repeat: no-repeat;
   height: 70vh;
   color: white; 
-
 }
 
 .hero-content-text{
@@ -54,4 +53,27 @@ nav ul li a {
     margin-bottom: 20px;
     font-size: 35px;
     margin-top: 80px;
+}
+.hero-navigasi-container{
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    margin: 50px 250px 0 250px;
+    background-color: #FBFBFB;
+    border-radius: 100px;
+    /* yang pertama itu bayangan geser ke-kanan, kedua itu ke kiri, dan value ketiga itu blurnya   */
+    box-shadow: 0 15px 10px rgba(0, 0, 1, 0.5);
+}
+.hero-navigasi-container ul{
+    list-style: none;
+    display: flex;
+    gap: 120px;
+    margin-top: 15px;
+    margin-right: 25px;
+    width: auto;
+}
+.hero-navigasi-container a{
+text-decoration:none;
+    color: #56B4E9;
+    
 }
