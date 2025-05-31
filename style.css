@@ -71,8 +71,7 @@ nav ul li a {
     display: flex;
     gap: 120px;
     margin-top: 15px;
-    margin-right: 25px;
-    width: auto;
+    margin-right: 35px;
 }
 .hero-navigasi-container a{
 text-decoration:none;
