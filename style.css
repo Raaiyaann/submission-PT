@@ -30,6 +30,7 @@ nav ul li a {
     font-weight: bold;
     text-decoration: none;
     font-size: 15px;
+    font-family: sans-serif;
 
 }
 
@@ -48,6 +49,7 @@ nav ul li a {
     flex-direction: column; 
     align-items: center;
     justify-content: center;
+    font-family: sans-serif;
 }
 .hero-content-text h1 {
     margin-bottom: 20px;
@@ -75,5 +77,5 @@ nav ul li a {
 .hero-navigasi-container a{
 text-decoration:none;
     color: #56B4E9;
-    
+    font-family: sans-serif;
 }
