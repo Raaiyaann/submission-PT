@@ -2,7 +2,7 @@
     {
         "id": "1",
         "image": "img/Bali.jpg",
-        "property-name": "Garuda Wisnu Kencana",
+        "name": "Garuda Wisnu Kencana",
         "location": "Bali, Indonesia",
         "rating": "⭐8.6 • 2401 reviews",
         "price": "2.500.000"
@@ -10,7 +10,7 @@
     {
         "id": "2",
         "image": "img/Bandung.jpg",
-        "property-name": "Braga Street",
+        "name": "Braga Street",
         "location": "Bandung, Indonesia.",
         "rating": "⭐7.8 • 1500 reviews",
         "price": "1.500.000"
