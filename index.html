@@ -1,45 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Submission Programming Tadulako</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
-<header>
-    <nav>
-        <img src="img/happyKeliling-removebg-preview.png" alt="Logo Happy Keliling" class="logo">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="#"
+          ><img
+            src="img/happyKeliling-removebg-preview.png"
+            alt="Logo Happy Keliling"
+            class="logo"
+        /></a>
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Services</a></li>
+          <button class="button-masuk"> Masuk</button>
+          <button class="button-daftar">Daftar</button>
         </ul>
-    </nav>
-   <section class="hero">
-     <div class="hero-content-text">
-        <h1>Hai <span style="color: #A4EBF3;">Traveller</span>, Tujuanmu Kemana?</h1>
-        <p><span style="font-weight: 600;">HappyKeliling.com</span> - Mencari Tempat Liburan Yang Menyenangkan Hanya Disini !</p>
-    </div>
-    <!-- ini container di atas background gambar untuk menampilkan lokasi berangkat ke lokasi tujuan -->
-    <div class="hero-content-destinasi">
-        <div class="hero-navigasi-container">
-            <ul>
-                <li><a href="#"> Pesawat</a></li>
-                <li><a href="#"> Hotel</a></li>
-                <li><a href="#"> Kereta Api</a></li>
-                <li><a href="#"> Ferry</a></li>
-                <li><a href="#"> Bus & Travel</a></li>
-            </ul>
+      </nav>
+      <section class="hero">
+        <div class="hero-content-text">
+          <h1>
+            Hai <span style="color: #a4ebf3; font-weight: bold;">Traveller</span>, Tujuanmu Kemana?
+          </h1>
+          <p>
+            <span style="font-weight: 600">HappyKeliling.com</span> - Mencari
+            Tempat Liburan Yang Menyenangkan Hanya Disini !
+          </p>
         </div>
-        <div class="destinasi-container">
-            
-        </div>
-    </div>
-</section>
 
-</header>
-</body>
+        <div class="destinasi-container">
+          <div class="hero-navigasi-container">
+            <a href="#"> Pesawat</a>
+            <a href="#"> Hotel</a>
+            <a href="#"> Kereta Api</a>
+            <a href="#"> Ferry</a>
+            <a href="#"> Bus & Travel</a>
+          </div>
+          <div class="card-destinasi">
+            <div class="card-dari">
+              <input
+                type="text"
+                name="card-dari"
+                id="card-dari"
+                placeholder="Kota Asal"
+              />
+            </div>
+            <div class="tukar-mode">
+              <button><i class="fa-solid fa-repeat"></i></button>
+            </div>
+            <div class="card-ke">
+              <input
+                type="text"
+                name="card-ke"
+                id="card-ke"
+                placeholder="Kota Tujuan"
+              />
+            </div>
+            <div class="tombol-cari">
+              <button>CARI</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- section baru -->
+      <section>
+        <h1 class="judul-card-destinasi">Tempat Destinasi</h1>
+      </section>
+    </header>
+  </body>
 </html>
