@@ -61,7 +61,7 @@ nav ul button {
 
 /* bagian hero */
 .hero {
-  background-image: url("img/hero2.jpg"); /* Ganti sesuai path gambarmu */
+  background-image: url("img/hero2.jpg"); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -88,7 +88,6 @@ nav ul button {
   padding: 20px 100px;
   background-color: white;
   border-radius: 50px;
-  /* yang pertama itu bayangan geser ke-kanan, kedua itu ke kiri, dan value ketiga itu blurnya   */
   box-shadow: 0 8px 10px rgba(0, 0, 1, 0.3);
   position: absolute;
   z-index: 1000px;
@@ -113,7 +112,7 @@ nav ul button {
   background-color: white;
   padding: 40px 80px 40px 80px;
   border-radius: 10px;
-  /* menyesuaikan dengan panjang isinya fit-content */
+  
   width: fit-content;
   display: flex;
   justify-content: center;
@@ -145,7 +144,7 @@ input[type="text"]:focus {
   width: fit-content;
 }
 
-/* section baru */
+/* section destinasi */
 .container-card {
   padding: 0 100px;
   margin: 20px 0;
@@ -153,7 +152,7 @@ input[type="text"]:focus {
 .judul-card-destinasi {
   text-align: center;
   font-size: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .container-card-items {
@@ -195,3 +194,224 @@ input[type="text"]:focus {
   font-size: 17px;
   padding-top: 50px;
 }
+
+
+
+/* Section Hotel */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 20px;
+}
+
+
+
+.judul-card-hotel {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+
+
+.hotel-card {
+  position: relative;
+  width: 300px;
+  min-width: 300px;
+  max-width: 300px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.hotel-card:hover {
+  transform: translateY(-5px);
+}
+
+.hotel-card img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.hotel-info {
+  padding: 30px;
+}
+
+.hotel-info h3 {
+  font-size: 16px;
+  margin: 0 0 15px;
+}
+
+.hotel-info p {
+  font-size: 14px;
+  color: #666;
+  margin: 0 0 15px;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.badge {
+  background-color: #56b4e9;
+  color: #fff;
+  font-weight: bold;
+  padding: 8px 8px;
+  border-radius: 4px;
+  font-size: 13px;
+}
+
+.text {
+  font-size: 13px;
+  font-weight: 600;
+  color: #000;
+}
+
+.reviews {
+  font-size: 12px;
+  color: #666;
+}
+
+.price {
+  font-size: 14px;
+  color: #000;
+}
+
+.price strong {
+  font-weight: bold;
+  color: #56b4e9;
+}
+
+.heart-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #333;
+  font-size: 18px;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.heart-icon:hover {
+  color: #fff; 
+  background-color: #e60023;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto 40px auto;
+  overflow: hidden;
+  padding: 0 100px;
+}
+
+.inspiration__wrapper {
+  overflow: hidden;
+  width: 100%;
+  padding: 0;   
+  margin: 0;    
+}
+
+.hotel-list {
+  display: flex;
+  gap: 35px;
+  flex-wrap: nowrap; 
+  transition: transform 0.5s cubic-bezier(.77,0,.18,1);
+  will-change: transform;
+}
+
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  transform: translateY(-50%);
+  background: #fff;
+  color: #56b4e9;
+  border: none;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  font-size: 20px;
+  cursor: pointer;
+  opacity: 0.85;
+  transition: background 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 16px rgba(44, 62, 80, 0.18), 0 1.5px 6px rgba(44, 62, 80, 0.10);
+}
+.slider-btn.left { left: 10px; }
+.slider-btn.right { right: 10px; }
+.slider-btn:hover { background: #56b4e9; }
+
+
+
+
+/* Section buat service */
+.trusted-service-section {
+  padding: 40px 20px;
+  background-color: #fff;
+}
+
+.service-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.service-container > .service-box {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 320px;
+  min-width: 280px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: box-shadow 0.3s ease;
+}
+
+.service-container > .service-box:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.service-box img {
+  width: 60px;
+  height: auto;
+  margin-right: 15px;
+}
+
+.service-text h3 {
+  font-size: 16px;
+  margin: 0 0 5px;
+  font-weight: 700;
+}
+
+.service-text p {
+  font-size: 14px;
+  margin: 0;
+  color: #555;
+}
+
+/* Section Pesawat */
+
+
+
+

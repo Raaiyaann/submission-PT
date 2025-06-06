@@ -14,5 +14,29 @@
         "location": "Bandung, Indonesia.",
         "rating": "⭐7.8 • 1500 reviews",
         "price": "1.500.000"
+    },
+    {
+        "id": "3",
+        "image": "img/kawah putih.jpg",
+        "name": "Kawah Putih",
+        "location": "Ciwidey, Bandung, Indonesia.",
+        "rating": "⭐8.5 • 2,300 reviews",
+        "price": "1.200.000"
+    },
+    {
+        "id": "4",
+        "image": "img/wayag.jpeg",
+        "name": "Pulau Wayag",
+        "location": "Raja Ampat, Papua Barat, Indonesia",
+        "rating": "⭐9.2 • 1,800 reviews",
+        "price": "3.800.000"
+    },
+    {
+        "id": "5",
+        "image": "img/borobudur.jpeg",
+        "name": "Candi Borobudur",
+        "location": "Magelang, Jawa Tengah, Indonesia",
+        "rating": "⭐9.0 • 3,500 reviews",
+        "price": "2.200.000"
     }
 ]
