@@ -14,5 +14,54 @@
         "location": "Bandung, Indonesia.",
         "rating": "⭐7.8 • 1500 reviews",
         "price": "1.500.000"
+    },
+     {
+        "id": "3",
+        "image": "img/Togian.jpg",
+        "name": "Pulau Togian ",
+        "location": "Tojo Una - Una, Indonesia.",
+        "rating": "⭐8.8 • 4003 reviews",
+        "price": "1.700.000"
+    },
+     {
+        "id": "4",
+        "image": "img/rajaampat.jpg",
+        "name": "Raja Ampat",
+        "location": "Papua, Indonesia.",
+        "rating": "⭐9.2 • 10201 reviews",
+        "price": "3.500.000"
+    },
+     {
+        "id": "5",
+        "image": "img/borobudur.jpg",
+        "name": "Candi Borobudur",
+        "location": "Magelang, Indonesia.",
+        "rating": "⭐7.6 • 3200 reviews",
+        "price": "1.200.000"
+    },
+     {
+        "id": "6",
+        "image": "img/bromo.jpg",
+        "name": "Gunung Bromo",
+        "location": "Jawa Timur, Indonesia.",
+        "rating": "⭐7.7 • 5500 reviews",
+        "price": "2.200.000"
+    }
+    ,
+     {
+        "id": "7",
+        "image": "img/monas.jpg",
+        "name": "Monas",
+        "location": "Jakarta, Indonesia.",
+        "rating": "⭐6.2 • 2320 reviews",
+        "price": "1.100.000"
+    },
+     {
+        "id": "8",
+        "image": "img/bukitTeletubbies.jpg",
+        "name": "Bukit Teletubbies",
+        "location": "Taman Bromo, Indonesia.",
+        "rating": "⭐5.8 • 1200 reviews",
+        "price": "1.000.000"
     }
 ]
