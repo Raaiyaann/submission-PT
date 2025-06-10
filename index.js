@@ -16,4 +16,35 @@ fetch('wisata.json')
         document.getElementById('propertyCards').appendChild(card);
     });
 })
-.catch(err => console.error("Gagal mengambil data:", err));
+.catch(err => console.error("Gagal mengambil data:", err)); 
+
+document.addEventListener('DOMContentLoaded', function() {
+  const slider = document.getElementById('hotelSlider');
+  const btnLeft = document.getElementById('hotelLeftBtn');
+  const btnRight = document.getElementById('hotelRightBtn');
+  const card = slider.querySelector('.hotel-card');
+  const cardWidth = card.offsetWidth + 35; // 35px = gap antar card
+
+  let position = 0;
+  const maxScroll = slider.scrollWidth - slider.parentElement.offsetWidth;
+
+  btnRight.addEventListener('click', function() {
+    // Geser ke kiri (next)
+    if (Math.abs(position) + cardWidth <= maxScroll) {
+      position -= cardWidth;
+    } else {
+      position = -maxScroll; // Batas kanan
+    }
+    slider.style.transform = `translateX(${position}px)`;
+  });
+
+  btnLeft.addEventListener('click', function() {
+    // Geser ke kanan (prev)
+    if (position + cardWidth <= 0) {
+      position += cardWidth;
+    } else {
+      position = 0; // Batas kiri
+    }
+    slider.style.transform = `translateX(${position}px)`;
+  });
+});
