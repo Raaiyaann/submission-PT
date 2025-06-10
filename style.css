@@ -20,8 +20,8 @@ nav {
 }
 
 nav img {
-  height: 170px;
-  width: 170px;
+  height: 60px;
+  width: 130px;
   margin-left: 70px;
   filter: contrast(1000);
   filter: brightness(1000);
@@ -48,7 +48,7 @@ nav ul button {
   font-weight: 600;
 }
 .button-daftar:hover {
-  background-color: #725CAD;
+  background-color: #725cad;
   color: white;
 }
 .button-masuk {
@@ -61,7 +61,7 @@ nav ul button {
 
 /* bagian hero */
 .hero {
-  background-image: url("img/hero2.jpg"); 
+  background-image: url("img/hero2.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -190,7 +190,7 @@ input[type="text"]:focus {
   padding-bottom: 15px;
   font-weight: 600;
 }
-.card-body  .rating,
+.card-body .rating,
 .card-body .location {
   color: #555;
   font-size: 13px;
@@ -204,8 +204,6 @@ input[type="text"]:focus {
   padding-top: 50px;
 }
 
-
-
 /* Section Hotel */
 /* body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -215,13 +213,11 @@ input[type="text"]:focus {
 }
  */
 
-
 .judul-card-hotel {
   text-align: center;
   font-size: 30px;
   margin-bottom: 25px;
 }
-
 
 .hotel-card {
   position: relative;
@@ -309,13 +305,13 @@ input[type="text"]:focus {
   background-color: #fff;
   border-radius: 50%;
   padding: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
   transition: color 0.3s ease;
   cursor: pointer;
 }
 
 .heart-icon:hover {
-  color: #fff; 
+  color: #fff;
   background-color: #e60023;
   transition: color 0.3s ease, background-color 0.3s ease;
 }
@@ -332,15 +328,15 @@ input[type="text"]:focus {
 .inspiration__wrapper {
   overflow: hidden;
   width: 100%;
-  padding: 0;   
-  margin: 0;    
+  padding: 0;
+  margin: 0;
 }
 
 .hotel-list {
   display: flex;
   gap: 35px;
-  flex-wrap: nowrap; 
-  transition: transform 0.5s cubic-bezier(.77,0,.18,1);
+  flex-wrap: nowrap;
+  transition: transform 0.5s cubic-bezier(0.77, 0, 0.18, 1);
   will-change: transform;
 }
 
@@ -362,13 +358,18 @@ input[type="text"]:focus {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 16px rgba(44, 62, 80, 0.18), 0 1.5px 6px rgba(44, 62, 80, 0.10);
+  box-shadow: 0 4px 16px rgba(44, 62, 80, 0.18),
+    0 1.5px 6px rgba(44, 62, 80, 0.1);
 }
-.slider-btn.left { left: 10px; }
-.slider-btn.right { right: 10px; }
-.slider-btn:hover { background: #56b4e9; }
-
-
+.slider-btn.left {
+  left: 10px;
+}
+.slider-btn.right {
+  right: 10px;
+}
+.slider-btn:hover {
+  background: #56b4e9;
+}
 
 .trusted-service-section {
   padding: 40px 20px;
@@ -391,12 +392,12 @@ input[type="text"]:focus {
   padding: 20px;
   max-width: 320px;
   min-width: 280px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   transition: box-shadow 0.3s ease;
 }
 
 .service-container > .service-box:hover {
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .service-box img {
@@ -417,7 +418,62 @@ input[type="text"]:focus {
   color: #555;
 }
 
+/*  --------------------footer section  ----------------------------------------------*/
+footer {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  border-top: solid 1px #dddddd;
+  padding: 20px 70px;
+}
 
+.footer-img {
+  width: 170px;
+  height: 80px;
+}
 
+.footer-layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 10px;
+  font-size: 14px;
+  gap: 20px;
+}
 
+.footer-layout-nomor {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 5px 0px;
+}
+.footer-layout-nomor a {
+  text-decoration: none;
+  padding: 0px 0px 5px 0px;
+  color: black;
+}
 
+.footer-layout-email {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 5px 0px;
+}
+.footer-layout-email a {
+  text-decoration: none;
+  padding: 0px 0px 5px 0px;
+  color: black;
+}
+
+.footer-layout-panggilan{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 5px 0px;
+}
+.footer-layout-panggilan a {
+  text-decoration: none;
+  padding: 0px 0px 5px 0px;
+  color: black;
+}
