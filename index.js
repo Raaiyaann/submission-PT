@@ -48,3 +48,18 @@ document.addEventListener('DOMContentLoaded', function() {
     slider.style.transform = `translateX(${position}px)`;
   });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+  const btnMasuk = document.getElementById('btnMasuk');
+  const btnDaftar = document.getElementById('btnDaftar');
+  if (btnMasuk) {
+    btnMasuk.addEventListener('click', function() {
+      window.location.href = 'pages/login.html';
+    });
+  }
+  if (btnDaftar) {
+    btnDaftar.addEventListener('click', function() {
+      window.location.href = 'pages/register.html';
+    });
+  }
+});
