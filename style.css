@@ -424,22 +424,26 @@ footer {
   display: flex;
   justify-content: space-between;
   border-top: solid 1px #dddddd;
-  padding: 20px 70px;
+  padding: 20px 80px;
 }
 
 .footer-img {
-  width: 170px;
-  height: 80px;
+  width: 100%;
+  height: 90px;
 }
 
 .footer-layout {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   padding: 0px 10px;
   font-size: 14px;
   gap: 20px;
+}
+
+.footer-layout a{
+  text-decoration: none;
+  padding: 0px 0px 5px 0px;
+  color: black;
 }
 
 .footer-layout-nomor {
@@ -447,11 +451,6 @@ footer {
   flex-direction: column;
   width: 100%;
   padding: 5px 0px;
-}
-.footer-layout-nomor a {
-  text-decoration: none;
-  padding: 0px 0px 5px 0px;
-  color: black;
 }
 
 .footer-layout-email {
@@ -476,4 +475,18 @@ footer {
   text-decoration: none;
   padding: 0px 0px 5px 0px;
   color: black;
+}
+
+.perusahaan,
+.dukungan,
+.produk,
+.aplikasi{
+  width: 100%;
+  padding: 15px 0px;
+}
+.google-play,
+.app-store{
+  width: 100%;
+  height: 65px;
+
 }

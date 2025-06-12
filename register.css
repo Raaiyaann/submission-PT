@@ -1,4 +1,3 @@
-
 /* REGISTER PAGE ONLY */
 
 
@@ -10,8 +9,18 @@
   justify-content: flex-start;
   padding: 0;
   margin: 0;
-  
   overflow: hidden;
+}
+
+/* Pastikan body dan html tidak menyebabkan scroll pada register */
+.register-page,
+.register-page body,
+.register-page html {
+  height: 100vh;
+  min-height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 /* Gambar background besar di kiri */

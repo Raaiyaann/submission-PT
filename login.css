@@ -1,13 +1,19 @@
-
-
 /* Login */
+
+
+
+.login-page {
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
 
 .login-page .main-container {
   display: flex;
-  min-height: 100vh;
+  height: 100vh; /* pastikan full tinggi viewport */
   background: #f6faff;
-  align-items: stretch;
-  justify-content: flex-start;
+  /* justify-content: flex-start; */
   padding: 0;
   margin: 0;
 }
@@ -16,6 +22,7 @@
 .login-page .left-side {
   flex: 2 1 0;
   min-width: 0;
+  height: 100vh; /* pastikan full tinggi viewport */
   min-height: 100vh;
   background: url("../img/login island.jpg") center center/cover no-repeat;
   position: relative;
