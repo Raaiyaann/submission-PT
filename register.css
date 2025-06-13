@@ -1,315 +1,226 @@
-/* REGISTER PAGE ONLY */
+/* Register Page Custom CSS - Non-AI Look, px units only */
 
-
-.register-page .main-container {
-  display: flex;
-  min-height: 100vh;
-  background: #f6faff;
-  align-items: stretch;
-  justify-content: flex-start;
-  padding: 0;
-  margin: 0;
-  overflow: hidden;
-}
-
-/* Pastikan body dan html tidak menyebabkan scroll pada register */
-.register-page,
-.register-page body,
-.register-page html {
+/* Lock register page to viewport, remove body margin, and prevent scroll */
+html, body, .register-page {
   height: 100vh;
   min-height: 100vh;
-  overflow: hidden;
+  width: 100vw;
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }
 
-/* Gambar background besar di kiri */
+/* Layout container */
+body .main-container {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+
+/* Left side: image */
 .register-page .left-side {
+  /* flex-grow (berarti 2x layar imagenya ambil) , flex shrink, flex-basis */
   flex: 2 1 0;
   min-width: 0;
-  min-height: 100vh;
+  height: 100%;
   background: url("../img/login island.jpg") center center/cover no-repeat;
   position: relative;
-  padding: 0;
   display: block;
 }
 
-/* Overlay biru muda di atas gambar */
-.register-page .left-side::before {
-  content: '';
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0, 102, 255, 0.08);
-  z-index: 1;
-}
 
-/* Sembunyikan gambar ilustrasi jika ada */
-.register-page .illustration img {
-  display: none !important;
-}
-
-/* Form register di kanan */
+/* Right side: form */
 .register-page .right-side {
   flex: 1 1 0;
   background: #fff;
-  padding: 3.5rem 2.5rem 2.5rem 2.5rem;
+  padding: 48px 40px 40px 40px;
   display: flex;
   align-items: center;
   justify-content: center;
   min-width: 350px;
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.10);
+  box-shadow: 0px 8px 32px 0px rgba(31, 38, 135, 0.10);
+  border-top-right-radius: 24px;
+  border-bottom-right-radius: 24px;
 }
 
+/* Register form */
 .register-page .register-form {
   width: 100%;
   max-width: 400px;
 }
 
 .register-page .form-title {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 1.5rem;
-  color: #3333a3;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  color: #2d3a8c;
   letter-spacing: -1px;
   text-align: center;
+  font-family: 'Lora', serif;
 }
 
 .register-page .form-group {
-  margin-bottom: 1.5rem;
+  margin-bottom: 18px;
 }
 
 .register-page .form-group input {
-  width: 90%;
-  height: 48px;
-  padding: 0 1rem;
-  border: 2px solid #3333a3;
+  width: 100%;
+  height: 46px;
+  padding: 0px 16px;
+  border: 2px solid #b6c6e3;
   border-radius: 10px;
-  font-size: 1rem;
-  background: #fff;
+  font-size: 16px;
+  background: #f8fafc;
   color: #222;
-  box-shadow: 0 2px 8px rgba(34, 139, 230, 0.06);
-  transition: border-color 0.3s, box-shadow 0.3s, background 0.3s;
+  box-shadow: 0px 1px 4px rgba(34, 139, 230, 0.04);
+  transition: border-color 0.2s, box-shadow 0.2s, background 0.2s;
 }
 
 .register-page .form-group input:focus {
   outline: none;
-  border-color: #0066ff;
+  border-color: #4f8cff;
   background: #e9f3ff;
+  box-shadow: 0px 2px 8px rgba(34, 139, 230, 0.10);
 }
 
+/* Checkbox group */
 .register-page .checkbox-group {
-  margin-bottom: 1.5rem;
+  margin-bottom: 18px;
   display: flex;
   align-items: flex-start;
-  gap: 0.5rem;
-}
-
-.register-page .checkbox-group input[type="checkbox"] {
-  width: auto;
-  height: auto;
-  margin: 0;
-  margin-top: 2px;
+  gap: 8px;
 }
 
 .register-page .checkbox-group label {
-  font-size: 0.9rem;
-  color: #666;
+  font-size: 15px;
+  color: #555;
   line-height: 1.4;
   cursor: pointer;
 }
 
 .register-page .checkbox-group label a {
-  color: #0066ff;
+  color: #4f8cff;
   text-decoration: none;
+  transition: color 0.2s;
 }
 
 .register-page .checkbox-group label a:hover {
   text-decoration: underline;
+  color: #2d3a8c;
 }
 
+/* Register button */
 .register-page .register-button {
   width: 100%;
-  height: 48px;
-  background: linear-gradient(90deg, #228be6 0%, #3333a3 100%);
-  color: white;
+  height: 46px;
+  background-color: #4f8cff;
+  color: #fff;
   border: none;
   border-radius: 8px;
-  font-size: 1.1rem;
+  font-size: 17px;
   font-weight: 600;
   cursor: pointer;
-  margin-bottom: 1.5rem;
-  transition: background 0.2s;
-  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.08);
+  margin-bottom: 18px;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0px 2px 8px rgba(59, 130, 246, 0.08);
 }
 
 .register-page .register-button:hover {
-  background: linear-gradient(90deg, #0052cc 0%, #228be6 100%);
+  background-color: #2d3a8c;
+  box-shadow: 0px 4px 16px rgba(59, 130, 246, 0.12);
 }
 
-.register-page .social-login {
-  margin-top: 2rem;
-}
-
+/* Divider */
 .register-page .divider {
-  position: relative;
   text-align: center;
-  margin-bottom: 1.5rem;
+  margin-bottom: 18px;
 }
 
-.register-page .divider::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 0;
-  right: 0;
-  height: 1px;
-  background-color: #e0e0e0;
-  z-index: 0;
-}
 
 .register-page .divider span {
   position: relative;
   background-color: #fff;
-  padding: 0 1rem;
-  font-size: 0.95rem;
-  color: #666;
+  padding: 0px 16px;
+  font-size: 15px;
+  color: #888;
   z-index: 1;
 }
 
+/* Social login buttons */
 .register-page .social-buttons {
   display: flex;
   justify-content: center;
-  gap: 1rem;
+  gap: 20px;
 }
 
 .register-page .social-button {
-  width: 48px;
-  height: 48px;
+  width: 44px;
+  height: 44px;
   border: 1px solid #e0e0e0;
   border-radius: 8px;
-  background-color: white;
+  background-color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: all 0.3s;
+  transition: all 0.2s;
 }
 
 .register-page .social-button:hover {
-  background-color: #f5f5f5;
-  transform: translateY(-1px);
+  background-color: #f0f4ff;
+  /* translate y ini untuk koordinat y, -2 berarti animasinya naik ke atas, scale (ukuran) itu kan originalnya 1, jadi 1.05 */
+  transform: translateY(-2px) scale(1.05);
+  border-color: #4f8cff;
 }
 
 .register-page .social-button img {
-  width: 24px;
-  height: 24px;
+  width: 22px;
+  height: 22px;
 }
 
+/* Login link */
 .register-page .login-link {
-  margin-top: 2rem;
+  margin-top: 24px;
   text-align: center;
 }
 
 .register-page .login-link span {
-  color: #666;
+  color: #888;
 }
 
 .register-page .login-link a {
-  color: #0066ff;
+  color: #4f8cff;
   font-weight: 500;
   text-decoration: none;
-  margin-left: 0.25rem;
+  margin-left: 4px;
+  transition: color 0.2s;
 }
 
 .register-page .login-link a:hover {
   text-decoration: underline;
+  color: #2d3a8c;
 }
 
+/* Terms info */
 .register-page .terms {
-  margin-top: 2rem;
+  margin-top: 24px;
   text-align: center;
-  font-size: 0.85rem;
-  color: #666;
+  font-size: 14px;
+  color: #888;
   line-height: 1.4;
 }
 
 .register-page .terms a {
-  color: #0066ff;
+  color: #4f8cff;
   text-decoration: none;
+  transition: color 0.2s;
 }
 
 .register-page .terms a:hover {
   text-decoration: underline;
+  color: #2d3a8c;
 }
 
-.register-page .footer {
-  margin-top: 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.register-page .footer img {
-  height: 50px;
-}
-
-.register-page .footer span {
-  font-size: 0.75rem;
-  color: #666;
-}
-
-/* Responsive */
-@media (max-width: 900px) {
-  .register-page .main-container {
-    flex-direction: column;
-    border-radius: 0;
-  }
-  .register-page .left-side,
-  .register-page .right-side {
-    width: 100%;
-    min-width: unset;
-    border-radius: 0;
-    min-height: 200px;
-  }
-  .register-page .right-side {
-    padding: 2rem 1rem;
-    min-height: unset;
-  }
-  .register-page .register-form {
-    max-width: 100%;
-  }
-  .register-page .social-buttons {
-    gap: 0.5rem;
-  }
-  .register-page .social-button {
-    width: 40px;
-    height: 40px;
-  }
-  .register-page .social-button img {
-    width: 20px;
-    height: 20px;
-  }
-}
-
-@media (max-width: 480px) {
-  .register-page .right-side {
-    padding: 1.5rem 1rem;
-  }
-  .register-page .form-group {
-    margin-bottom: 1rem;
-  }
-  .register-page .form-group input {
-    height: 44px;
-  }
-  .register-page .register-button {
-    height: 44px;
-    font-size: 1rem;
-  }
-  .register-page .checkbox-group {
-    margin-bottom: 1.2rem;
-  }
-  .register-page .checkbox-group label {
-    font-size: 0.85rem;
-  }
-}
